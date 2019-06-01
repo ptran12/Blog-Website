@@ -20,7 +20,15 @@ app.get("/", function(req, res){
   res.render("home", {startingContent: homeStartingContent});
 });
 
+// About Page
+app.get("/about", function(req, res){
+  res.render("about", {aboutCont: aboutContent});
+});
 
+// Contact Us Page
+app.get("/contact", function(req, res){
+  res.render("contact", {contactCont: contactContent});
+});
 
 
 
