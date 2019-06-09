@@ -7,6 +7,11 @@
 
 <% console.log(post); %>
 
+<!-- loop that grabs the post title -->
+
+<% for (var i=0; i<post.length; i++) { %>
+   <% console.log(post[i].title); %>
+<% }; %>
 
 <!-- Footer -->
 <%- include("partials/footer") -%>
