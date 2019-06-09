@@ -9,9 +9,13 @@
 
 <!-- loop that grabs the post title -->
 
-<% for (var i=0; i<post.length; i++) { %>
-   <% console.log(post[i].title); %>
-<% }; %>
+<% post.forEach(function(post){ %>
+   <!-- <% console.log(post.title); %> -->
+
+   <h1><%= post.title %></h1>
+   <p><%= post.content %></p>
+
+<% }) %>
 
 <!-- Footer -->
 <%- include("partials/footer") -%>
